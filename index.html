@@ -380,7 +380,7 @@
       <div class="card gathering">
         <div class="eyebrow">Your next gathering</div>
         <h3>The Sunday Table</h3>
-        <div class="when">Breakfast &amp; new beginnings · November 1 · 10:00 am · June's Kitchen</div>
+        <div class="when">Smørrebrød &amp; new beginnings · November 2 · 10:00 · Freja's kitchen, Vesterbro</div>
         <div class="stack" id="gathering-stack"></div>
         <div class="going" id="rsvp">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
@@ -397,7 +397,7 @@
     <div>
       <div class="eyebrow">The community</div>
       <h1 style="margin-top:18px">Give a little.<br/>Get a little.</h1>
-      <p>Mentors, skills, trainings and volunteer moments, offered by neighbors and peers. Every connection you make here becomes part of your people.</p>
+      <p>Skills, advice and a helping hand, shared between newcomers to Copenhagen and the locals who know the ropes. Give first, and every connection you make here becomes part of your people.</p>
     </div>
     <div class="card balance-card">
       <div class="eyebrow muted">Your give &amp; take this season</div>
@@ -420,7 +420,7 @@
   <div class="toolbar">
     <label class="search" style="width:340px">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="mpSearch" placeholder="Try “portfolio”, “Spanish”, “food bank”" />
+      <input id="mpSearch" placeholder="Try “Danish”, “MitID”, “food bank”" />
     </label>
     <select class="flt" id="fFormat">
       <option value="">Any format</option>
@@ -428,7 +428,7 @@
     </select>
     <select class="flt" id="fCost">
       <option value="">Any cost</option>
-      <option>Free</option><option>Exchange</option><option>Paid</option>
+      <option>Free</option><option>Exchange</option>
     </select>
     <label class="muted" style="display:flex;gap:8px;align-items:center;font-size:14px">
       <input type="checkbox" id="fMatch" /> Good matches only
@@ -456,16 +456,16 @@
     <div class="card p-card">
       <div class="av xl c-peach">JL</div>
       <h2>Jamie Lin</h2>
-      <div class="headline">Product designer · Oakland, CA</div>
+      <div class="headline">Product designer · Vesterbro, Copenhagen</div>
       <div style="display:flex;gap:6px;justify-content:center;flex-wrap:wrap">
         <span class="pill">Connector</span><span class="pill ghost">Member since 2025</span>
       </div>
       <div class="p-stats" style="margin-top:24px">
         <div><div class="num" id="ps-people">0</div><div class="lbl">people</div></div>
-        <div><div class="num">4</div><div class="lbl">circles</div></div>
+        <div><div class="num">3</div><div class="lbl">circles</div></div>
         <div><div class="num">12</div><div class="lbl">intros made</div></div>
       </div>
-      <div class="bio">I design calm software and host the occasional dinner. I love introducing people who should know each other. Currently learning to speak up more, and to speak Spanish.</div>
+      <div class="bio">Moved from Oakland to Copenhagen in 2025. I design calm software, host the occasional dinner and love introducing people who should know each other. Currently learning Danish, and working up the courage for winter swimming.</div>
     </div>
 
     <div>
@@ -497,10 +497,9 @@
         <h3>My circles</h3>
         <p class="hint" style="margin-top:6px">Private notes stay private. Circles are where you show up together.</p>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span class="pill">🌿 Design &amp; a little life</span>
-          <span class="pill">🍳 The Sunday Table</span>
-          <span class="pill">🗣️ Spanish over coffee</span>
-          <span class="pill">🥕 East Bay Food Share</span>
+          <span class="pill">🗣️ Danish Language Café</span>
+          <span class="pill">🛠️ Builders at CodeNode</span>
+          <span class="pill">🥕 Amager Food Share</span>
         </div>
       </div>
     </div>
@@ -526,39 +525,39 @@ const ICON = {
 
 /* ---------------- Data ---------------- */
 const people = [
-  { id: 'maya', name: 'Maya Chen', ini: 'MC', color: 'peach', role: 'Founder, Tabletop Studio', met: 'Design school, 2014', rhythm: 'Monthly', last: 24, closeness: .85,
+  { id: 'maya', name: 'Maya Chen', ini: 'MC', color: 'peach', role: 'Founder, Tabletop Studio', met: 'Design school in Oakland, 2014', rhythm: 'Monthly', last: 24, closeness: .85,
     notes: [{ q: 'She wants the studio to feel like a kitchen table, not an office.', w: 'Tuesday' }, { q: 'Loves persimmons. Allergic to cats.', w: 'August' }],
-    moments: ['Opening her studio in November'], circles: ['Design & a little life'] },
-  { id: 'daniel', name: 'Daniel Lee', ini: 'DL', color: 'mint', role: 'Engineering lead, new role', met: 'Worked together at Loop', rhythm: 'Monthly', last: 10, closeness: .7,
-    notes: [{ q: 'Nervous about managing people for the first time.', w: 'Last week' }],
-    moments: ['First week at new job (Friday)'], circles: ['The Sunday Table'] },
-  { id: 'sofia', name: 'Sofia Ruiz', ini: 'SR', color: 'lav', role: 'Teacher & neighbor', met: 'Next door, since 2023', rhythm: 'Weekly', last: 2, closeness: .95,
-    notes: [{ q: 'Practicing Spanish together on Thursdays. Her mom visits in December.', w: 'Sunday' }],
-    moments: ['Her mom visits in December'], circles: ['Spanish over coffee'] },
-  { id: 'june', name: 'June Park', ini: 'JP', color: 'sand', role: 'Chef, hosts The Sunday Table', met: 'Through Sofia', rhythm: 'Seasonal', last: 18, closeness: .6,
-    notes: [{ q: 'Collects old cookbooks. Ask about the 1960s Korean one.', w: 'September' }],
-    moments: [], circles: ['The Sunday Table'] },
+    moments: ['Opening her studio in Nørrebro in November'], circles: ['Builders at CodeNode'] },
+  { id: 'daniel', name: 'Daniel Lee', ini: 'DL', color: 'mint', role: 'Engineering lead, new role at a Danish fintech', met: 'Worked together at Loop', rhythm: 'Monthly', last: 10, closeness: .7,
+    notes: [{ q: 'Nervous about leading a flat Danish team for the first time.', w: 'Last week' }],
+    moments: ['First week at new job (Friday)'], circles: ['Newcomers’ Sunday Walk'] },
+  { id: 'sofie', name: 'Sofie Andersen', ini: 'SA', color: 'lav', role: 'Teacher & neighbour in Vesterbro', met: 'Next door, since 2025', rhythm: 'Weekly', last: 2, closeness: .95,
+    notes: [{ q: 'We swap Danish and English on Thursdays. Her mormor turns 90 in December.', w: 'Sunday' }],
+    moments: ['Her mormor turns 90 in December'], circles: ['Danish Language Café'] },
+  { id: 'freja', name: 'Freja Holm', ini: 'FH', color: 'sand', role: 'Chef, hosts The Sunday Table', met: 'Through Sofie', rhythm: 'Seasonal', last: 18, closeness: .6,
+    notes: [{ q: 'Collects old Danish cookbooks. Ask about her grandmother’s 1960s one.', w: 'September' }],
+    moments: [], circles: ['Newcomers’ Sunday Walk'] },
   { id: 'omar', name: 'Omar Haddad', ini: 'OH', color: 'sky', role: 'Design director, my mentor', met: 'Kindred mentorship, 2025', rhythm: 'Monthly', last: 52, closeness: .5,
     notes: [{ q: 'Suggested I lead the next design critique. Tell him how it went!', w: 'August' }],
-    moments: ['Daughter starts college'], circles: ['Design & a little life'] },
-  { id: 'priya', name: 'Priya Nair', ini: 'PN', color: 'peach', role: 'Climbing buddy, data scientist', met: 'Bouldering gym', rhythm: 'Weekly', last: 6, closeness: .8,
-    notes: [{ q: 'Training for her first outdoor climb in Bishop.', w: 'Last week' }],
-    moments: [], circles: [] },
+    moments: ['Daughter moves to Aarhus for uni'], circles: ['Builders at CodeNode'] },
+  { id: 'priya', name: 'Priya Nair', ini: 'PN', color: 'peach', role: 'Climbing buddy, data scientist', met: 'Bouldering gym on Refshaleøen', rhythm: 'Weekly', last: 6, closeness: .8,
+    notes: [{ q: 'Training for her first outdoor climb on Bornholm.', w: 'Last week' }],
+    moments: [], circles: ['Amager Food Share'] },
 ];
 
-const aisha = { id: 'aisha', name: 'Aisha Patel', ini: 'AP', color: 'lav', role: 'Senior designer · offers mentoring', met: 'Kindred match', rhythm: 'New', last: null, closeness: .15,
-  notes: [], moments: [], circles: ['Design & a little life', 'The Sunday Table', 'Spanish over coffee'], isNew: true };
+const aisha = { id: 'aisha', name: 'Aisha Patel', ini: 'AP', color: 'lav', role: 'Senior designer in Copenhagen · offers mentoring', met: 'Kindred match', rhythm: 'New', last: null, closeness: .15,
+  notes: [], moments: [], circles: ['Danish Language Café', 'Builders at CodeNode', 'Amager Food Share'], isNew: true };
 
 const profile = {
   offers: [
     { t: 'Design mentoring', d: '1:1, twice a month · Free' },
     { t: 'Portfolio reviews', d: 'Remote · 30 min' },
-    { t: 'Thoughtful intros', d: 'To designers & founders in the Bay' },
+    { t: 'Thoughtful intros', d: 'To designers & founders in Copenhagen' },
   ],
   asks: [
-    { t: 'Public speaking', d: 'Getting comfortable leading talks' },
-    { t: 'Spanish practice', d: 'Conversation partner, intermediate' },
-    { t: 'Woodworking basics', d: 'Want to build a bookshelf' },
+    { t: 'Danish conversation', d: 'Intermediate, Modul 3' },
+    { t: 'SKAT & my first tax return', d: 'Understanding my årsopgørelse' },
+    { t: 'Public speaking', d: 'Presenting to Danish teams' },
   ],
 };
 
@@ -568,32 +567,47 @@ const CATS = [
   { k: 'skill', label: 'Skills', e: '🛠️' },
   { k: 'training', label: 'Trainings', e: '📚' },
   { k: 'volunteer', label: 'Volunteers', e: '🤝' },
+  { k: 'network', label: 'Networking', e: '🔗' },
+  { k: 'sponsor', label: 'Sponsorships', e: '🎗️' },
 ];
 
 let listings = [
-  { id: 1, cat: 'mentor', kind: 'offer', who: aisha, title: 'Design mentoring for mid-career designers', desc: 'Career growth, critique, finding your voice. I’ve mentored 20+ designers through promotions and pivots.', tags: ['design', 'career', 'mentoring'], format: ['1:1', 'Remote'], cost: 'Free', avail: '2 spots this month', mutual: 3 },
-  { id: 2, cat: 'mentor', kind: 'offer', who: { name: 'Marcus Bell', ini: 'MB', color: 'sky', role: 'Keynote speaker & coach' }, title: 'Public speaking coaching — find your calm on stage', desc: 'Practice talks in a safe room. We’ll work on structure, breath and the first 30 seconds.', tags: ['public speaking', 'confidence'], format: ['1:1', 'In person'], cost: 'Exchange', avail: 'Thursdays', mutual: 2 },
-  { id: 3, cat: 'skill', kind: 'offer', who: { name: 'Lucía Torres', ini: 'LT', color: 'peach', role: 'Translator' }, title: 'Spanish conversation over coffee', desc: 'Relaxed weekly chats for intermediate learners. Happy to swap for help with my website.', tags: ['spanish', 'language'], format: ['Group', 'In person'], cost: 'Exchange', avail: 'Saturday mornings', mutual: 1 },
-  { id: 4, cat: 'skill', kind: 'offer', who: { name: 'Ben Okafor', ini: 'BO', color: 'sand', role: 'Furniture maker' }, title: 'Woodworking basics in my garage shop', desc: 'Learn safe tool use and build a small shelf over three Sundays. All tools provided.', tags: ['woodworking', 'making'], format: ['Group', 'In person'], cost: 'Paid', avail: 'Starts Nov 9', mutual: 0 },
-  { id: 5, cat: 'training', kind: 'offer', who: { name: 'Grace Kim', ini: 'GK', color: 'mint', role: 'Product manager' }, title: 'Intro to product thinking (4-week cohort)', desc: 'A small, friendly cohort for career changers. Real case studies, no jargon.', tags: ['product', 'career change'], format: ['Group', 'Remote'], cost: 'Free', avail: '6 of 10 seats left', mutual: 1 },
-  { id: 6, cat: 'training', kind: 'offer', who: { name: 'Hannah Wright', ini: 'HW', color: 'lav', role: 'Community nurse' }, title: 'First aid & CPR refresher', desc: 'Two-hour hands-on session. Certificate included. Great for parents and gathering hosts.', tags: ['first aid', 'safety'], format: ['Group', 'In person'], cost: 'Paid', avail: 'Nov 15', mutual: 0 },
-  { id: 7, cat: 'volunteer', kind: 'offer', who: { name: 'East Bay Food Share', ini: 'EB', color: 'mint', role: 'Community circle' }, title: 'Saturday food bank shift', desc: 'Sort and pack groceries for 200 families. Friendly crew, coffee provided, no experience needed.', tags: ['food', 'volunteering'], format: ['Group', 'In person'], cost: 'Free', avail: 'Every Saturday 9–12', mutual: 4 },
-  { id: 8, cat: 'volunteer', kind: 'offer', who: { name: 'Tom Alvarez', ini: 'TA', color: 'sky', role: 'Retired engineer' }, title: 'Fix-it café: repair, don’t replace', desc: 'Bring a broken lamp or toaster and we’ll fix it together. Volunteers with any skill welcome.', tags: ['repair', 'making', 'volunteering'], format: ['Group', 'In person'], cost: 'Free', avail: 'First Sunday monthly', mutual: 1 },
-  { id: 9, cat: 'mentor', kind: 'ask', who: { name: 'Leo Martins', ini: 'LM', color: 'sand', role: 'Design student' }, title: 'Looking for a design mentor before graduation', desc: 'Final-year student. Would love feedback on my portfolio and how to approach my first job search.', tags: ['design', 'portfolio', 'mentoring'], format: ['1:1', 'Remote'], cost: 'Free', avail: 'Flexible', mutual: 1 },
-  { id: 10, cat: 'skill', kind: 'ask', who: { name: 'Nadia Rahman', ini: 'NR', color: 'peach', role: 'Bakery owner' }, title: 'Help redesigning my bakery’s menu & sign', desc: 'Small neighborhood bakery. Can pay in bread forever, or teach sourdough.', tags: ['design', 'branding'], format: ['1:1', 'In person'], cost: 'Exchange', avail: 'This month', mutual: 2 },
-  { id: 11, cat: 'volunteer', kind: 'ask', who: { name: 'Riverside Library', ini: 'RL', color: 'mint', role: 'Community circle' }, title: 'Volunteers for teen career day', desc: 'Share your job with high-schoolers in 15-minute table chats. Designers especially wanted!', tags: ['career', 'volunteering', 'design'], format: ['Group', 'In person'], cost: 'Free', avail: 'Nov 20', mutual: 0 },
-  { id: 12, cat: 'training', kind: 'ask', who: { name: 'Chris Doyle', ini: 'CD', color: 'lav', role: 'Career changer' }, title: 'Seeking intros to product designers', desc: 'Moving from teaching into UX. Looking for 2–3 short chats with working designers.', tags: ['intros', 'career change', 'design'], format: ['1:1', 'Remote'], cost: 'Free', avail: 'Weekday evenings', mutual: 1 },
+  { id: 1, cat: 'mentor', kind: 'offer', who: aisha, title: 'Design mentoring for newcomers breaking into Copenhagen', desc: 'Portfolio, interviews and finding your voice in a Danish studio. I moved from London four years ago and remember how it feels.', tags: ['design', 'career', 'mentoring'], format: ['1:1', 'Remote'], cost: 'Free', avail: '2 spots this month · Remote', mutual: 3 },
+  { id: 2, cat: 'mentor', kind: 'offer', who: { name: 'Henrik Bach', ini: 'HB', color: 'sky', role: 'Ex-CTO & angel investor' }, title: 'Mentoring for international founders starting an ApS', desc: 'From CVR number to first hire. Monthly sessions on the parts of Danish business nobody explains.', tags: ['startup', 'founders', 'business'], format: ['1:1', 'In person'], cost: 'Free', avail: 'Mondays · Nordhavn', mutual: 1 },
+  { id: 3, cat: 'mentor', kind: 'offer', who: { name: 'Amira Hassan', ini: 'AH', color: 'peach', role: 'Product lead, moved from Cairo in 2019' }, title: 'Your first Danish job, from someone who’s been there', desc: 'Job search, unspoken rules and keeping your confidence while you wait for replies.', tags: ['career', 'job search', 'mentoring'], format: ['1:1', 'Remote'], cost: 'Free', avail: 'Evenings · Remote', mutual: 2 },
+  { id: 4, cat: 'skill', kind: 'offer', who: { name: 'Mette Kjær', ini: 'MK', color: 'sand', role: 'Retired Danish teacher' }, title: 'Danish conversation practice over coffee', desc: 'Small relaxed group, all levels past Modul 2. Swap for English chats or help with my new iPad.', tags: ['danish', 'language', 'conversation'], format: ['Group', 'In person'], cost: 'Exchange', avail: 'Thursdays 10:00 · Absalon, Vesterbro', mutual: 2 },
+  { id: 5, cat: 'skill', kind: 'offer', who: { name: 'Søren Holm', ini: 'SH', color: 'mint', role: 'Municipal caseworker' }, title: 'Help with MitID, CPR, SKAT and finding a doctor', desc: 'Bring your letters from e-Boks and your questions. We sort them out together, one form at a time.', tags: ['mitid', 'cpr', 'skat', 'tax', 'paperwork'], format: ['1:1', 'In person'], cost: 'Free', avail: 'Wednesdays 16–18 · Hovedbiblioteket', mutual: 1 },
+  { id: 6, cat: 'skill', kind: 'offer', who: { name: 'Kasper Nyborg', ini: 'KN', color: 'sky', role: 'Bike mechanic' }, title: 'Fix your bike and ride safely through the winter', desc: 'Lights, brakes, tyres and the hand signals locals expect. Bring your bike and a snack to share.', tags: ['cycling', 'bike repair'], format: ['Group', 'In person'], cost: 'Exchange', avail: 'Saturdays · Nørrebro', mutual: 0 },
+  { id: 7, cat: 'training', kind: 'offer', who: { name: 'Line Østergaard', ini: 'LØ', color: 'lav', role: 'HR partner' }, title: 'Presenting yourself in Danish job interviews (2 evenings)', desc: 'What Danish hiring managers listen for, plus practice runs with friendly feedback.', tags: ['interviews', 'public speaking', 'career'], format: ['Group', 'In person'], cost: 'Free', avail: 'Nov 12 & 19 · Nørrebro Bibliotek', mutual: 1 },
+  { id: 8, cat: 'training', kind: 'offer', who: { name: 'Camille Dubois', ini: 'CD', color: 'mint', role: 'Intercultural trainer' }, title: 'Danish workplace culture 101: flat hierarchies, fredagsbar and Janteloven', desc: 'A small cohort for newcomers starting new jobs. Real stories, no jargon.', tags: ['work culture', 'career'], format: ['Group', 'Remote'], cost: 'Free', avail: '4-week cohort · 6 of 12 seats left', mutual: 0 },
+  { id: 9, cat: 'volunteer', kind: 'offer', who: { name: 'Amager Food Share', ini: 'AF', color: 'mint', role: 'Community circle' }, title: 'Saturday food bank shift: sort and pack groceries', desc: 'Pack groceries for 200 families. Friendly crew, coffee provided, no Danish needed.', tags: ['food', 'volunteering'], format: ['Group', 'In person'], cost: 'Free', avail: 'Saturdays 9–12 · Amager', mutual: 4 },
+  { id: 10, cat: 'volunteer', kind: 'offer', who: { name: 'Valby Repair Café', ini: 'VR', color: 'sand', role: 'Community circle' }, title: 'Repair café: fix a lamp, make a friend', desc: 'Bring a broken lamp or toaster and we fix it together. Volunteers with any skill welcome.', tags: ['repair', 'making', 'volunteering'], format: ['Group', 'In person'], cost: 'Free', avail: 'First Sunday monthly · Valby Kulturhus', mutual: 1 },
+  { id: 11, cat: 'network', kind: 'offer', who: { name: 'Jonas Lund', ini: 'JL', color: 'sky', role: 'Head of Product at a fintech' }, title: 'Intro chats with Danish product and tech teams', desc: 'Thirty minutes to talk about your background, then I introduce you to two teams that fit.', tags: ['product', 'tech', 'networking'], format: ['1:1', 'Remote'], cost: 'Free', avail: 'Fridays · Østerbro or remote', mutual: 2 },
+  { id: 12, cat: 'network', kind: 'offer', who: { name: 'Sara Lindqvist', ini: 'SL', color: 'peach', role: 'Community lead at a coworking space' }, title: 'Coffee walks with people in Copenhagen’s startup scene', desc: 'A small group walk along the harbour. I make the introductions, you bring the curiosity.', tags: ['startup', 'founders', 'networking'], format: ['Group', 'In person'], cost: 'Free', avail: 'Thursdays 17:00 · Nordhavn', mutual: 1 },
+  { id: 13, cat: 'sponsor', kind: 'offer', who: { name: 'Havnelys Software', ini: 'HS', color: 'lav', role: 'Software company' }, title: 'Our office as a free meetup venue (seats 40)', desc: 'Projector, kitchen and a harbour view. Free for community groups on weeknights.', tags: ['venue', 'meetup', 'space'], format: ['Group', 'In person'], cost: 'Free', avail: 'Weeknights · Islands Brygge', mutual: 0 },
+  { id: 14, cat: 'sponsor', kind: 'offer', who: { name: 'Ingrids Bageri', ini: 'IB', color: 'sand', role: 'Neighbourhood bakery' }, title: 'Day-old bread and pastries for your community event', desc: 'Tell us the date and headcount. Kanelsnegle included when we have them.', tags: ['food', 'meetup'], format: ['Group', 'In person'], cost: 'Free', avail: 'Weekends · Frederiksberg', mutual: 1 },
+  { id: 15, cat: 'sponsor', kind: 'offer', who: { name: 'Kanalhuset Coworking', ini: 'KC', color: 'mint', role: 'Coworking space' }, title: 'Free coworking desks for job-seeking newcomers (3 months)', desc: 'A desk, fast wifi and people to have lunch with while you job hunt.', tags: ['coworking', 'space', 'job search'], format: ['Group', 'In person'], cost: 'Free', avail: 'Rolling · Christianshavn', mutual: 0 },
+  { id: 16, cat: 'mentor', kind: 'ask', who: { name: 'Carlos Mendes', ini: 'CM', color: 'sand', role: 'Backend engineer, 3 months in Copenhagen' }, title: 'Looking for a mentor to navigate Danish work culture', desc: 'New team, flat hierarchy, lots of quiet meetings. I would love a monthly chat with someone who has done it.', tags: ['work culture', 'career', 'mentoring'], format: ['1:1', 'In person'], cost: 'Free', avail: 'Flexible · Frederiksberg', mutual: 1 },
+  { id: 17, cat: 'mentor', kind: 'ask', who: { name: 'Leila Farahani', ini: 'LF', color: 'lav', role: 'Design student' }, title: 'Design mentor wanted before graduation', desc: 'Final-year student. Feedback on my portfolio and how to approach Danish studios would mean a lot.', tags: ['design', 'portfolio', 'mentoring'], format: ['1:1', 'Remote'], cost: 'Free', avail: 'Flexible · Holmen', mutual: 1 },
+  { id: 18, cat: 'skill', kind: 'ask', who: { name: 'Yuki Tanaka', ini: 'YT', color: 'peach', role: 'UX designer' }, title: 'CV and portfolio review for the Danish market', desc: 'Applying to Danish companies and hearing nothing back. Happy to swap for Japanese lessons.', tags: ['design', 'cv', 'portfolio'], format: ['1:1', 'Remote'], cost: 'Exchange', avail: 'This month · Remote', mutual: 2 },
+  { id: 19, cat: 'skill', kind: 'ask', who: { name: 'Fatima Al-Sayed', ini: 'FA', color: 'mint', role: 'PhD student' }, title: 'Help reading my rental contract and deposit rules', desc: 'My first Danish lease is long and confusing. One patient hour would really help.', tags: ['housing', 'rental', 'paperwork'], format: ['1:1', 'In person'], cost: 'Free', avail: 'Weekday evenings · Nordvest', mutual: 0 },
+  { id: 20, cat: 'training', kind: 'ask', who: { name: 'Anna Schmidt', ini: 'AS', color: 'sky', role: 'Nurse from Hamburg' }, title: 'Study partners for the Prøve i Dansk 3 exam', desc: 'Exam is in May. Looking for two or three people to practise speaking and mock tests with.', tags: ['danish', 'language', 'exam'], format: ['Group', 'In person'], cost: 'Exchange', avail: 'Weekends · Valby', mutual: 0 },
+  { id: 21, cat: 'volunteer', kind: 'ask', who: { name: 'Nørrebro Bibliotek', ini: 'NB', color: 'mint', role: 'Public library' }, title: 'Volunteer hosts for the library language café', desc: 'Sit at a table, keep the conversation going and help newcomers feel at home. Danish or English.', tags: ['language', 'volunteering'], format: ['Group', 'In person'], cost: 'Free', avail: 'Tuesdays 17–19 · Nørrebro', mutual: 3 },
+  { id: 22, cat: 'volunteer', kind: 'ask', who: { name: 'Newcomers’ Sunday Walk', ini: 'SW', color: 'peach', role: 'Community circle' }, title: 'Walk leaders for the Newcomers’ Sunday Walk', desc: 'Lead the loop around the Lakes once a month and make sure nobody walks alone.', tags: ['walking', 'newcomers', 'volunteering'], format: ['Group', 'In person'], cost: 'Free', avail: 'Sundays 10:00 · Søerne', mutual: 2 },
+  { id: 23, cat: 'network', kind: 'ask', who: { name: 'Tobi Okoye', ini: 'TO', color: 'sky', role: 'Product designer' }, title: 'Intros to Copenhagen design studios', desc: 'Moved from Lagos last spring. Looking for two or three short chats with people at local studios.', tags: ['design', 'intros'], format: ['1:1', 'Remote'], cost: 'Free', avail: 'Weekday mornings · Christianshavn', mutual: 1 },
+  { id: 24, cat: 'network', kind: 'ask', who: { name: 'Marta Kowalska', ini: 'MK', color: 'lav', role: 'Data analyst' }, title: 'Coffee intros to data teams at Danish companies', desc: 'Here with my partner and ready to work. A few warm intros would make all the difference.', tags: ['data', 'intros', 'job search'], format: ['1:1', 'In person'], cost: 'Free', avail: 'Flexible · Amager', mutual: 0 },
+  { id: 25, cat: 'sponsor', kind: 'ask', who: { name: 'Lærke Nielsen', ini: 'LN', color: 'sand', role: 'Organiser of New in CPH' }, title: 'Venue or food sponsor for a monthly newcomer meetup', desc: 'About 50 people each month. We need a room and something to eat, and will thank you loudly.', tags: ['venue', 'food', 'meetup'], format: ['Group', 'In person'], cost: 'Free', avail: 'Monthly · Indre By', mutual: 1 },
 ];
 
 const circles = [
-  { e: '🌿', bg: 'var(--teal-soft)', name: 'Design & a little life', desc: 'Sunday walks for designers. 42 members.', next: 'Sun · Lake Merritt' },
-  { e: '🍳', bg: 'var(--sand)', name: 'The Sunday Table', desc: 'Breakfast & new beginnings. 18 members.', next: 'Nov 1 · June’s Kitchen' },
-  { e: '🗣️', bg: 'var(--lav)', name: 'Spanish over coffee', desc: 'All levels welcome. 27 members.', next: 'Sat · Café Luna' },
-  { e: '🥕', bg: 'var(--peach)', name: 'East Bay Food Share', desc: 'Feeding neighbors weekly. 130 members.', next: 'Sat · 9 am' },
+  { e: '🗣️', bg: 'var(--lav)', name: 'Danish Language Café', desc: 'Hyggelig chats, all levels. 64 members.', next: 'Tue · Nørrebro Bibliotek' },
+  { e: '🌿', bg: 'var(--teal-soft)', name: 'Newcomers’ Sunday Walk', desc: 'A slow loop around the Lakes, then coffee. 38 members.', next: 'Sun 10:00 · Dronning Louises Bro' },
+  { e: '🛠️', bg: 'var(--sand)', name: 'Builders at CodeNode', desc: 'Designers, devs and founders sharing work in progress. 120 members.', next: 'Thu 17:30 · CodeNode' },
+  { e: '🥕', bg: 'var(--peach)', name: 'Amager Food Share', desc: 'Feeding neighbours weekly. 130 members.', next: 'Sat · 9 am' },
 ];
 
 /* ---------------- State ---------------- */
-const state = { cat: 'all', kind: 'offer', q: '', format: '', cost: '', matchOnly: false, done: new Set(), joined: new Set(['The Sunday Table', 'Design & a little life', 'Spanish over coffee', 'East Bay Food Share']), requested: new Set() };
+const state = { cat: 'all', kind: 'offer', q: '', format: '', cost: '', matchOnly: false, done: new Set(), joined: new Set(['Danish Language Café', 'Builders at CodeNode', 'Amager Food Share']), requested: new Set() };
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const findPerson = id => people.find(p => p.id === id) || (id === 'aisha' ? aisha : null);
@@ -613,7 +627,7 @@ function renderToday() {
   const items = [
     { id: 't1', type: 'A familiar face', person: findPerson('maya'), title: 'A little hello to Maya', body: 'It’s been a few weeks. Ask how her new studio is coming along.', cta: 'Reach out', act: "openPerson('maya')" },
     { id: 't2', type: 'A new connection', person: aisha, title: 'Meet Aisha Patel', body: 'She offers design mentoring. You bring the thoughtful intros.', cta: 'See your match', act: "goto('community'); highlightListing(1)" },
-    { id: 't3', type: 'A place to belong', sprout: true, title: 'Make room for good company', body: 'Design & a little life has a Sunday walk. There’s a spot for you.', cta: 'Explore the circle', act: "goto('community'); document.getElementById('circles').scrollIntoView({behavior:'smooth', block:'center'})" },
+    { id: 't3', type: 'A place to belong', sprout: true, title: 'Make room for good company', body: 'Newcomers’ Sunday Walk loops the Lakes this Sunday. There’s a spot for you.', cta: 'Explore the circle', act: "goto('community'); document.getElementById('circles').scrollIntoView({behavior:'smooth', block:'center'})" },
   ];
   $('#today-list').innerHTML = items.map(i => `
     <div class="sugg ${state.done.has(i.id) ? 'done' : ''}">
@@ -657,11 +671,11 @@ function renderAside() {
     <div class="nb-foot"><span>A detail worth remembering. Only for you.</span><button class="link" onclick="openPerson('maya')">Open ${ICON.arrow}</button></div>`;
   const spaces = [
     { p: findPerson('daniel'), t: 'Daniel’s first week', d: 'New role, big feelings. Send a little encouragement on Friday.' },
-    { p: findPerson('omar'), t: 'Omar’s daughter starts college', d: 'A quiet house. Maybe a coffee next week?' },
+    { p: findPerson('omar'), t: 'Omar’s daughter moves to Aarhus', d: 'A quiet house. Maybe a coffee next week?' },
   ];
   $('#spaces').innerHTML = spaces.map(s => `
     <div class="card space" onclick="openPerson('${s.p.id}')">${av(s.p)}<div><h4>${s.t}</h4><p>${s.d}</p></div></div>`).join('');
-  $('#gathering-stack').innerHTML = ['sofia', 'june', 'daniel', 'maya', 'priya'].map(id => av(findPerson(id), 'sm')).join('');
+  $('#gathering-stack').innerHTML = ['sofie', 'freja', 'daniel', 'maya', 'priya'].map(id => av(findPerson(id), 'sm')).join('');
 }
 
 /* ---------------- Drawer: person detail ---------------- */
@@ -838,7 +852,7 @@ function openPost() {
       <div class="seg" id="postKind"><button class="active" data-k="offer" type="button">Offering</button><button data-k="ask" type="button">Asking</button></div></div>
     <div class="two">
       <div class="row"><label>Category</label><select class="input" id="pCat">${CATS.slice(1).map(c => `<option value="${c.k}">${c.label}</option>`).join('')}</select></div>
-      <div class="row"><label>Cost</label><select class="input" id="pCost"><option>Free</option><option>Exchange</option><option>Paid</option></select></div>
+      <div class="row"><label>Cost</label><select class="input" id="pCost"><option>Free</option><option>Exchange</option></select></div>
     </div>
     <div class="row"><label>Title</label><input class="input" id="pTitle" placeholder="e.g. Portfolio reviews for early-career designers" /></div>
     <div class="row"><label>A few words</label><textarea class="input" id="pDesc" placeholder="Who is it for? What will you do together?"></textarea></div>
