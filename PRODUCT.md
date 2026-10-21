@@ -7,7 +7,7 @@
 Kindred is a **personal relationship manager** (a "personal CRM") built into a **community**. Most CRMs treat people as a pipeline. Kindred treats relationships as something you look after. It helps you:
 
 1. **Look after the people you already know.** Remember the small details, notice when it's been a while, and show up at the moments that matter.
-2. **Meet the right new people.** Use a community marketplace where members offer and ask for mentoring, skills, training and volunteer help.
+2. **Meet the right new people.** Use a community marketplace where members offer and ask for mentoring, skills, training, volunteering, networking and sponsorship.
 
 The goal is a **mutually beneficial community**. Every member gives something and gets something, and the people you meet through the community become part of your personal circle.
 
@@ -30,10 +30,10 @@ The goal is a **mutually beneficial community**. Every member gives something an
 
 ## 4. Target Users
 
-- **The Connector (primary persona: Jamie, 34, product designer).** Knows lots of people and wants to stay a good friend and colleague. Likes making introductions.
+- **The Connector (primary persona: Jamie, 34, product designer who moved from Oakland to Copenhagen in 2025).** Knows lots of people and wants to stay a good friend and colleague. Likes making introductions.
 - **The Seeker.** Career changers, new grads and people new to a city who want a mentor, a skill or a place to belong.
 - **The Giver.** Experienced professionals and retirees who want to mentor, teach or volunteer in a meaningful way.
-- **The Circle Host.** Runs a small community group (e.g. "Design & a little life") and hosts gatherings.
+- **The Circle Host.** Runs a small community group (e.g. "Danish Language Café") and hosts gatherings.
 
 ## 5. Core Experience
 
@@ -59,16 +59,16 @@ The goal is a **mutually beneficial community**. Every member gives something an
 **My profile**
 - Name, headline, location, bio.
 - **Offers** (what I can give: e.g. design mentoring, portfolio reviews).
-- **Asks** (what I'm looking for: e.g. public speaking, Spanish practice).
+- **Asks** (what I'm looking for: e.g. Danish conversation, SKAT help, public speaking).
 - Circles I belong to; **give & take balance** (contributions vs. received).
 
 ### Page 2 — "Community" (Marketplace)
 
 A marketplace where members **offer** and **ask**.
 
-- **Categories**: Mentors · Skills · Trainings · Volunteers (+ All).
+- **Categories**: Mentors · Skills · Trainings · Volunteers · Networking · Sponsorships (+ All).
 - **Toggle**: *Offers* (people giving) / *Asks* (people looking for help).
-- **Search & filters**: keyword, format (1:1, group, remote, in person), cost (free / exchange / paid).
+- **Search & filters**: keyword, format (1:1, group, remote, in person), cost (free / exchange). No paid listings: the community is give-first.
 - **Listing cards**: person, title, description, tags, format, availability, mutual connections, and a "Good match for you" badge when it fits your Asks or Offers.
 - **Actions**: *Request to connect* / *Offer to help*, with a short warm message. Accepted connections are added to *My People* automatically.
 - **Post a listing**: create an offer or ask.
@@ -79,7 +79,7 @@ A marketplace where members **offer** and **ask**.
 1. **Reconnect**: Today → "A little hello to Maya" → *Reach out* → message sent → last-connected updated.
 2. **Find a mentor**: Community → Mentors → filter "remote" → open listing → *Request to connect* → intro note → Aisha appears in *My People* as "new connection".
 3. **Give back**: Profile → add an Offer ("Portfolio reviews, 2/month") → it appears in the marketplace → matched to Seekers.
-4. **Volunteer**: Community → Volunteers → "Saturday food bank shift" → *Offer to help*.
+4. **Volunteer**: Community → *Asks* → Volunteers → "Volunteer hosts for the library language café" → *Offer to help*.
 
 ## 7. Matching (v1, simple)
 
